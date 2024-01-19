@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Panier d'Achat</title>
+    <link rel="stylesheet" href="panier.css">
+    <script src="./panier.js" defer></script>
+</head>
+<body>
+
+<div id="cart">
+    <div class="item">
+    
+        <img  height="130" width="170" src="./photo.jpg" alt="">
+        <span class="item-name">Ordinateur tablette</span>
+        <div class="controls">
+            <button class="quantity-btn" onclick="updateQuantity('item1', -1)">-</button>
+            <span id="item1">1</span>
+            <button class="quantity-btn" onclick="updateQuantity('item1', 1)">+</button>
+            <button class="remove-btn" onclick="removeItem('item1')">Supprimer</button>
+            <button id="likeBtn" onclick="toggleLike()">❤️ J'aime</button>
+
+        </div>
+    </div>
+
+    <!-- Ajoutez d'autres articles de la même manière -->
+
+    <div id="total">Total:CFA <span id="total-price">10.00</span></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
